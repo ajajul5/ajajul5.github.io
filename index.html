@@ -13,6 +13,7 @@
         </noscript>
         <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
         <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <noscript>
             <style>
                 .tf-header {
@@ -156,62 +157,62 @@
                     </div>
                     <div class="grid pb-3" data-aos="zoom-out" data-aos-delay="100">
                       <div class="grid-sizer"></div>
-                      <div class="grid-item"><a href="#">
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio1.png"/>
                             <figcaption> 
                               <h4>Web Design</h4>
                               <p>Dribbble</p>
                             </figcaption>
-                          </figure></a></div>
-                      <div class="grid-item"><a href="#">
+                          </figure></div>
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio2.png"/>
                             <figcaption> 
                               <h4>Web Development</h4>
                               <p>GitHub</p>
                             </figcaption>
-                          </figure></a></div>
-                      <div class="grid-item"><a href="#">
+                          </figure></div>
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio3.png"/>
                             <figcaption> 
                               <h4>Audio Mixing</h4>
                               <p>Soundcloud</p>
                             </figcaption>
-                          </figure></a></div>
-                      <div class="grid-item"><a href="#">
+                          </figure></div>
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio4.png"/>
                             <figcaption>
                               <h4>Video Editing</h4>
                               <p>Adobe After Effects</p>
                             </figcaption>
-                          </figure></a></div>
-                      <div class="grid-item"><a href="#">
+                          </figure></div>
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio5.png"/>
                             <figcaption>
                               <h4>Photography</h4>
                               <p>Adobe Photoshop</p>
                             </figcaption>
-                          </figure></a></div>
-                      <div class="grid-item"><a href="#">
+                          </figure></div>
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio6.png"/>
                             <figcaption>
                               <h4>App Development</h4>
                               <p>Android</p>
                             </figcaption>
-                          </figure></a></div>
-                      <div class="grid-item"><a href="#">
+                          </figure></div>
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio7.png"/>
                             <figcaption>
                               <h4>App Design</h4>
                               <p>Flutter</p>
                             </figcaption>
-                          </figure></a></div>
-                      <div class="grid-item"><a href="#">
+                          </figure></div>
+                      <div class="grid-item">
                           <figure class="portfolio-item"><img src="images/portfolio/folio8.png"/>
                             <figcaption>
                               <h4>App Development</h4>
                               <p>Flutter</p>
                             </figcaption>
-                          </figure></a></div>
+                          </figure></div>
                     </div>
                   </div>
                 </div>
@@ -259,13 +260,13 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <h3 class="h5">Contact us</h3>
-                                <form action="https://formspree.io/youremail@example.com" method="POST">
+                                <form id="contact-us-form" method="POST">
                                     <div class="row no-gutters">
                                         <div class="col-lg-6 col-md-12 col-sm-12 tf-contact-col">
                                             <input class="bg-light form-control" type="text" name="name" placeholder="*Name" required="required"/>
                                         </div>
                                         <div class="col-lg-6 col-md-12 col-sm-12 pb-2">
-                                            <input class="bg-light form-control" type="email" name="_replyto" placeholder="*Your Email Address" required="required"/>
+                                            <input class="bg-light form-control" type="email" name="email" placeholder="*Your Email Address" required="required"/>
                                         </div>
                                     </div>
                                     <div class="row pb-2 no-gutters">
@@ -273,7 +274,7 @@
                                             <textarea class="bg-light mb-2 form-control" name="message" placeholder="*Your Message" rows="5" required="required"></textarea>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                    <input type="submit" class="btn btn-primary" id="submit-form" value="submit" >
                                 </form>
                             </div>
                             <div class="col-md-6 col-sm-12 float-right text-right">
@@ -298,8 +299,32 @@
             </div>
         </footer>
         <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
+        <script src="css\jquery-3.4.1.min.js"></script>
         <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
         <script src="scripts/parallax.min.js?ver=1.2.0"></script>
         <script src="scripts/main.js?ver=1.2.0"></script>
+        <script>
+            $(document).ready(function(){
+                 $("#contact-us-form" ).on( "submit", function( e ) {
+                    e.preventDefault();
+                    $.ajax({
+                        type : "post",
+                        dataType : "json",
+                        url : 'form.php',
+                        data : ({
+                            form_data:$("#contact-us-form").serialize()
+                        }),
+                        success : function(data){
+                            swal(
+                                data.title,
+                                data.msg,
+                                data.status
+                            );
+                            document.getElementById('contact-us-form').reset();
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
