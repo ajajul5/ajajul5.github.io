@@ -17,7 +17,7 @@
 			$conn->query($sql);
 		}
 
-		$sql = "INSERT INTO contact_uss(name, email, msg) VALUES('$name', '$email', '$message')";
+		$sql = "INSERT INTO contact_us(name, email, message) VALUES('$name', '$email', '$message')";
 		if ($conn->query($sql) === TRUE) {
 		  $msg = array('status' => 'success', 'title' => 'Your Query saved successfully.', 'msg' => "Thank you for connecting with me.");
 		} else {
