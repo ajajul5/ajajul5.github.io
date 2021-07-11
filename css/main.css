@@ -241,7 +241,7 @@
 
 .my-pic1 {
     height: 595px;
-    background: url(../images/IMG_20190722_181957.jpg) no-repeat center center;
+    background: url(../images/IMG_20191025_211148.JPG) no-repeat center center;
     background-size: cover;
 }
 .my-pic3 {
@@ -253,6 +253,10 @@
     height: 595px;
     background: url(../images/IMG_20200131_202829.jpg) no-repeat center center;
     background-size: cover;
+}
+
+.text-shadow{
+    text-shadow: 1px 1px 5px black;
 }
 
 .list-unstyled{
