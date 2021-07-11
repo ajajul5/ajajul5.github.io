@@ -40,7 +40,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-sm-12">
-                        <h2>I am Ajajul Ansari<br> PHP Developer</h2>
+                        <h2><?php echo "I am Ajajul Ansari"; ?><br> PHP Developer</h2>
                     </div>
                 </div>
                 <div class="row">
