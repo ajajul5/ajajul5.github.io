@@ -1,0 +1,515 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Ajajul Ansari} \\ \vspace{1pt}
+    Vijay Nagar, Near Balaji Jwellers, Antop Hill, Wadala East, Mumbai, 400037
+    \\ \vspace{1pt}
+    \small \href{tel:+xxxxxxxxxxxx}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-9082141180} ~} \href{ajajul78692apt@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ajajul78692apt@gmail.com}}
+    ~ 
+    \href{https://www.linkedin.com/in/ajajul5}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}
+    ~
+    \href{https://github.com/ajajul5}{\raisebox{-0.2\height}\faGithub\ \underline{GituHub}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {KPB HINDUJA COLLAGE}{2016 - 2019}
+      {Bachelor in Computer Application (BCA)}{Mumbai, India}
+      \vspace{7pt}
+  \resumeSubHeadingListEnd
+
+
+
+%------RELEVANT COURSEWORK-------
+\section{SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item PHP
+                \item Codeigniter
+                \item Laravel
+                \item Slim
+                \item CakePHP
+                \item OpenCart
+                \item MySQL
+                \item PosgreSQL
+                \item MongoDB
+                \item jQuery
+                \item JavaScript
+                \item Ajax
+                \item Axios
+                \item Selenium
+                \item Scrapping
+                \item HTML/CSS
+                \item Bootstrap
+                \item GIT
+                \item Swagger
+                \item Docker
+                \item Java
+                \item JDBC
+                \item ExpressJs
+                \item NodeJs
+                \item ReactJS
+                \item WebSocket
+                \item OOPS Concept
+                \item Web Development
+                \item Jira
+                \item Bitbucket
+                \item Github
+                \item Elastic Search
+            \end{itemize}
+        \end{multicols}
+        \vspace{7pt}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {PurpleBridge \href{https://purplebridge.in}{\raisebox{-0.1\height}\faExternalLink } $|$ \large{Client of Neosoft}}
+      {Aug 2023 - Present}
+      {\underline{PHP Developer} $|$ \large{Laravel, ExpressJs/NodeJs, Websocket, MySQL, Micro-Srvices, ELK}}{Banglore, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Purple Bridge Innovations specializes in custom software development, offering tailored IT services like cloud computing, mobile tech solutions, and user-centric design.}}
+        \resumeItem{\normalsize{Techs Platform: The company owns and operates the Ed-tech platform Tap2crack, Finance techs like Rufilo, Tradofina, Plebgraph}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vibing Techcloudpro \href{https://techcloudpro.com}{\raisebox{-0.1\height}\faExternalLink }}
+      {Mar 2023 - July 2023}
+      {\underline{PHP Developer} $|$ \large{OpenCart, MySQL}}{Banglore, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Digital Transformation Experts with core focus on ERP, Cyber Security, RPA, Business Process Automation using AI 4.0}}
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {Rentokil PCI \href{https://www.rentokil-pestcontrolindia.com}{\raisebox{-0.1\height}\faExternalLink }}
+        {Nov 2021 - Mar 2023}
+        {\underline{PHP Developer} $|$ \large{PHP, CodeIgniter, MySQL}} {Mumbai, India}
+        \resumeItemListStart
+          \resumeItem{\normalsize{Rentokil PCI is the Expert in Pest Control, offering effective solutions for more than 100 years globally and over six decades in India. Rentokil is listed on LSE and is a constituent of the FTSE 100 index.}}
+        \resumeItemListEnd
+        
+        \resumeSubheading
+          {Atos India \href{https://atos.net}{\raisebox{-0.1\height}\faExternalLink }}
+          {Aug 2021 - Oct 2021}
+          {\underline{PHP Developer} $|$ \large{CackePHP, PosgreSQL}}{Mumbai, India}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Atos is a global leader in digital transformation with 111,000 employees and annual revenue of c. €11 billion. European number one in cybersecurity, cloud and high performance computing.}}
+          \resumeItemListEnd
+
+        \resumeSubheading
+          {Ebrandz LLP \href{https://www.ebrandz.in}{\raisebox{-0.1\height}\faExternalLink }}
+          {Jun 2019 - Jun 2021}
+          {\underline{PHP Developer} $|$ \large{CodeIgniter, Slim, MySQL, MongoDB}}{Mumbai, India}
+          \resumeItemListStart
+            \resumeItem{\normalsize{The company has been recognized as 'One of the BEST SEARCH ENGINE OPTIMIZATION Providers in the WORLD' by DIGIT MAGAZINE.}}
+          \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {{\textbf{\large{Common Integrations for below projects.}}}}{2019 - Present}
+          \resumeItemListStart
+          \resumeItem{\normalsize{\textbf{Authentication:} Integrated social login via Google, Facebook, GitHub, and JWT token-based authentication.}}
+          \resumeItem{\normalsize{\textbf{Mailing:} Configured and optimized mailing systems using SMTP and AWS SES.}}
+          \resumeItem{\normalsize{\textbf{Automation:} Developed and managed cron jobs, queue workers, and data scraping processes.}}
+          \resumeItem{\normalsize{\textbf{Reporting:} Implemented export functionalities to PDF, Excel, CSV, and Images with automated uploads to Google Drive.}}
+          \resumeItem{\normalsize{\textbf{Payment Integration:} Integrated payment gateways, including Bill Desk and Razorpay.}}
+          \resumeItem{\normalsize{\textbf{API Development \& Micro-Services::} Designed and deployed RESTful APIs for seamless interaction with project features.}}
+          \resumeItemListEnd 
+          \vspace{-9pt}
+
+          
+      \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Micro Services}}} } $|$ \large{Laravel, MySQL}}{Aug 2023 - Present}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Payment Service}.}}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Developed and maintained a microservice for handling diverse payment types.}}
+                \resumeItem{\normalsize{Integrated with multiple payment partners, including Yes Bank, Razorpay, PayU, Paynimo, Cashfree.}}
+                \resumeItem{\normalsize{Supported various payment methods such as Payment Gateway, UPI Intent, E-Collect, and Bank Transfer.}}
+                \resumeItem{\normalsize{Managed end-to-end payment processes, including initiation, creation, surcharges, and verification.}}
+            \resumeItemListEnd
+            \resumeItem{\normalsize{\textbf{Loan Service :} for repayment processes, including types of loans and calculations for repayments and dues.}}
+            \resumeItem{\normalsize{\textbf{Third-Party Service :} for verify users' PAN and assess loan amount eligibility based on credit scores.}}
+            \resumeItem{\normalsize{\textbf{Event Service :} for communication through web engagement for active loans.}}
+            \resumeItem{\normalsize{\textbf{Master Service:} for storing all types of master data, including Bank IFSC and Bank Master.}}
+            \resumeItem{\normalsize{\textbf{External Gateway:} for managing webhooks, receiving various types of payment webhooks.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Purple Pharma}}} \href{}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{Laravel, MySQL}}{Apr 2024 - Jul 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a comprehensive dashboard for managing doctors, chemists, products, gifts, and users with specific roles and permissions (BO, SBO, ABM, RBM, ZSM, NSM, GM, VP, President, Director, Admin).}}
+            \resumeItem{\normalsize{Enabled BOs and SBOs (Medical Representatives) to file Daily Call Reports (DCRs), track doctor and chemist visits, manage campaigns, assign products, handle gifting, track personal expenses, and monitor business outcomes.}}
+            \resumeItem{\normalsize{Established a clear hierarchy and approval process between roles, ensuring structured workflow and accountability.}}
+            \resumeItem{\normalsize{Implemented a mapping feature for reassigning doctors, chemists, and subordinates when users leave the organization.}}
+            \resumeItem{\normalsize{Designed an approval matrix across modules where necessary streamline operations and ensure compliance.}}
+            \resumeItem{\normalsize{Enhanced data security by implementing role-based access control, ensuring that users only have access to relevant information and features.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Tap2Crack Chat App}}} \href{}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{ExprssJs, NodeJs, Websocket, MySQL}}{Jul 2024 - Present}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a chat application for live class.}}
+            \resumeItem{\normalsize{Chat has multiple feartures like create Rooms, 1-1 chatting also has notifications, kicking users form rooms.}}
+            \resumeItem{\normalsize{Handling permissions for modarator and simple student.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Tap2Crack Admin Gateway}}} \href{}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{Laravel, Redis, Cache, MySQL}}{Mar 2024 - May 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Tap2crack has many features like. Management of roles, categories, subjects, students, exams, courses, books, coupons, study materials, purchases and many more. }}
+            \resumeItem{\normalsize{Developed a Test Series feature that allows users to create sections and add questions with assigned marks.}}
+            \resumeItem{\normalsize{Implemented a drag-and-drop feature for easy creation of question sets.}}
+            \resumeItem{\normalsize{Created a folder hierarchy in the course section to help users easily locate, upload, and modify files and folders.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+        
+      \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Tap2Crack Blog}}} \href{}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{Laravel, MySQL}}{Jun 2024 - Jun 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a dashboard enabling users to manage categories, upload prospect images, and write blogs that automatically sync to the Tap2Crack blog site.}}
+            \resumeItem{\normalsize{Tap2crack Blogs has 3 screens.}}
+            \resumeItemListStart
+                \resumeItem{\normalsize{\textbf{Homepage:} Displays each category with the six latest articles.}}
+                \resumeItem{\normalsize{\textbf{Category:} Lists all articles associated with a specific category.}}
+                \resumeItem{\normalsize{\textbf{Articals:} Provides detailed reading of Articles, displays related articles, and includes course navigation links.}}
+            \resumeItemListEnd
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Short Url Generator}}} \href{}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{Laravel, MySQL}}{Aug 2024 - Aug 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A URL shortening service that allows users to create shortened links, making long URLs more manageable and trackable.}}
+            \resumeItem{\normalsize{This application is mapped for various devices and products, including desktop and Android devices.}}
+            \resumeItem{\normalsize{\textbf{The link has three behaviors:} Web Only, App Only, and App then Web Only.}}
+            \resumeItem{\normalsize{When the link is triggered by a desktop, it redirects to the full URL.}}
+            \resumeItem{\normalsize{When the link is triggered by a mobile device, it attempts to launch the respective app; if the app is not found, it redirects to the Play Store or the full URL in the mobile browser.}}
+            \resumeItem{\normalsize{A dashboard is provided for tracking and managing shortened links efficiently.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://partnerportal.ai}{\textbf{\large{\underline{Partner Portal}}} \href{https://partnerportal.ai}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{OpenCart, MySQL}}{Mar 2023 - July 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Cloud-based, AI-powered Vendor Management Platform.}}
+            \resumeItem{\normalsize{Developed company and vendor product relationships, enabling companies to order products from vendors and vendors to view their product orders.}}
+            \resumeItem{\normalsize{Implemented data synchronization between Celigo, Netsuite, and Partner Portal through custom APIs.}}
+            \resumeItem{\normalsize{Designed and built dashboards with comprehensive filter options for data analysis.}}
+            \resumeItem{\normalsize{Created dynamic HTML input fields for public form, allowing users to customize and reorder fields as needed.}}
+            \resumeItem{\normalsize{Integrated GST validation API for compliance.}}
+            \resumeItem{\normalsize{Developed API for document uploads to AWS S3.}}
+            \resumeItem{\normalsize{Established webhooks to ensure seamless data synchronization between Partner Portal, Netsuite, and Celigo.}}
+            \resumeItem{\normalsize{Managed data access restrictions across Super Admin, company, vendor, and five additional user groups.}}
+            \resumeItem{\normalsize{Addressed and resolved daily bugs using Jira.}}
+            \resumeItem{\normalsize{Utilized MySQL for efficient data storage and retrieval.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{ODSAPI}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{Laravel, MySQL}}{Mar 2023 - July 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed APIs to fetch and store Shopify data (Products, Sales, Orders, Payments) in MongoDB.}}
+            \resumeItem{\normalsize{Created APIs for syncing data with Netsuite, tailored for companies and their vendors.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{Indent Portal}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{PHP, MySQL}}{Nov 2021 - Mar 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed to manage product licenses with full CRUD operations, including alerts for upcoming expirations.}}
+            \resumeItem{\normalsize{Implemented an approval matrix for indents based on financial thresholds.}}
+            \resumeItem{\normalsize{Set up automated notifications for product license expiration.}}
+            \resumeItem{\normalsize{Successfully migrated the project to the Laravel framework.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{TRF (Termination Request Form) Portal}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{PHP, MySQL}}{Nov 2021 - Mar 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Built a dashboard to monitor contract statuses among submitters, approvers, and financiers.}}
+            \resumeItem{\normalsize{Developed 5 levels approval matrix with option approval, rejection, or clarification, with visibility for CSEs.}}
+            \resumeItem{\normalsize{Implemented a group chat feature within the portal for clarification discussions.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{Credit Notes Portal}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{PHP, MySQL}}{Nov 2021 - Mar 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a system for updating debtor lists and enabling CSEs to raise credit notes against balance payments.}}
+            \resumeItem{\normalsize{Implemented functionality to read and store data from Excel files for processing balance payments.}}
+            \resumeItem{\normalsize{Established an approval matrix for credit notes, allowing approvers to accept, reject, or request clarification, with status tracking visible to CSEs.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{PayEasy}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{PHP, MySQL}}{Nov 2021 - Mar 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Integrated Razorpay and Bill Desk payment gateways.}}
+            \resumeItem{\normalsize{Developed functionality for generating payment links and barcodes for deferred payments.}}
+            \resumeItem{\normalsize{Automated confirmation emails to customers, employees, and managers upon successful payment.}}
+            \resumeItem{\normalsize{Set up webhooks for real-time payment confirmation.}}
+            \resumeItem{\normalsize{Successfully migrated the project to the Laravel framework.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{Lead Tracker}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{PHP, MySQL}}{Nov 2021 - Mar 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Managed lead submissions and developed dashboards for comprehensive reporting.}}
+            \resumeItem{\normalsize{Automated document uploads to Google Drive and enabled lead report exports to Excel and CSV formats, with automatic uploads to Google Drive.}}
+            \resumeItem{\normalsize{Developed an API feature to rate leads based on points.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{Myclaim}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{PHP, MySQL}}{Nov 2021 - Mar 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a portal for settling employee expense claims, including document upload functionality.}}
+            \resumeItem{\normalsize{Implemented a multi-level approval process based on the reporting manager.}}
+            \resumeItem{\normalsize{Provided approvers with options to accept or reject claims, along with the ability to add comments.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{Daily Sales Performance (DSP)}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{PHP, MySQL}}{Nov 2021 - Mar 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Designed and enhanced four applications (NKA, SSD, HYG, PSD) to optimize input collection from field agents, streamlining business processes.}}
+            \resumeItem{\normalsize{Integrated Google authentication for secure and convenient login, along with JWT for token-based authentication.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\href{https://ioclanalytics.net/wsp}{\textbf{\large{\underline{Indian Oil Analytics}}}\href{https://ioclanalytics.net/wsp}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{CakePHP, MySQL}}{Aug 2021 - Oct 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed frontend and backend services using CakePHP, with PostgreSQL as the database.}}
+            \resumeItem{\normalsize{Implemented reporting features for various time frames (daily, weekly, monthly, etc.).}}
+            \resumeItem{\normalsize{Added export functionality for reports into CSV and Excel formats.}}
+            \resumeItem{\normalsize{Automated the distribution of daily reports to managers at the area, city, state, and country levels.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+
+      \resumeProjectHeading
+          {\href{Version7.edeveloperz.com}{\textbf{\large{\underline{Version7.edeveloperz.com}}}\href{Version7.edeveloperz.com}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{CodeIgniter, MySQL, MongoDB}}{Aug 2021 - Oct 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Build custom templates daily reports mailing.}}
+            \resumeItem{\normalsize{Build PPC reports page with dashboards and custom layouts. With multiple charts and export feature.}}
+            \resumeItem{\normalsize{Integrate Woo foo, Google form, Jot form third party API to version7 and version8 dashboard.}}
+            \resumeItem{\normalsize{Used Webhooks to monitor events at form submissions.}}
+            \resumeItem{\normalsize{Data scraping for generating reports like ratings, reviews of posted business on websites.}}
+            \resumeItem{\normalsize{Used Cron jobs to pull data daily from third party data to our database.}}
+            \resumeItem{\normalsize{Used CodeIgniter framework for frontend and backend services and MongoDB, MySQL to fetch and store data.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{Service.edeveloperz.com}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{Slim, MySQL, MongoDB}}{Jun 2019 - Jun 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed APIs for Version7 features to facilitate interaction with various front-end platforms and devices.}}
+            \resumeItem{\normalsize{Utilized the Slim PHP framework for API development, with Version7 being built in CodeIgniter.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+
+      \resumeProjectHeading
+          {{\textbf{\large{\underline{Personal Projects}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{Slim, MySQL, MongoDB}}{Jan 2019 - Jan 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Ad Platform:} Developed a Laravel-based platform for buying and selling ads between clients and customers, with MySQL for data management.}}
+            \resumeItem{\normalsize{\textbf{Computer Class Management:} Created a system for managing student registration, courses, fees, and certifications using CakePHP and MySQL.}}
+            \resumeItem{\normalsize{\textbf{MLM System:} Built a user registration and management system with revenue dashboards for each hierarchical user, using Laravel.}}
+            \resumeItem{\normalsize{\textbf{E-commerce Application:} Developed an online gift business platform (cakes, candies, flowers) using Laravel.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+          
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+ %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+\begin{itemize}[label=$\bullet$, noitemsep]
+    \item Web Designing And PHP Development (ASTERIXSOLUTION). \hfill \textit{Issued: Jan 2019}
+    \item Big Data Hadoop Development (ASTERIXSOLUTION). \hfill \textit{Issued: Jan 2018}
+    \item Core Java And Advanced Java Development (ASTERIXSOLUTION). \hfill \textit{Issued: Jan 2017}
+    \item Diploma on Computer Application, Software Development and Hardware (IT-INFOTECH). \hfill \textit{Issued: Jan 2016}
+\end{itemize}
+ 
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Personal Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{English, Hindi, Urdu}} \\
+     \textbf{\normalsize{Hobbies:}}{ \normalsize{Online Games, Listening Musics, Watching Movies}} \\
+     \textbf{\normalsize{Date of birth:}}{\normalsize{ 05 June 1996 }} \\
+     \textbf{\normalsize{Nationality:}}{\normalsize{ Indian }} \\
+     \textbf{\normalsize{Marital status:}}{\normalsize{ Single }} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+\end{document}
